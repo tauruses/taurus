@@ -1,0 +1,44 @@
+{
+  "name": "@tauruses/tauruses",
+  "version": "0.0.1",
+  "description": "A set of web components and utils.",
+  "keywords": [
+    "web components",
+    "tauruses",
+    "taurus",
+    "tau",
+    "component"
+  ],
+  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && mkdir dist",
+    "build": "npm run prebuild && tsc -b",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "publish": "npm publish",
+    "publish:patch": "npm run patch && npm run publish",
+    "publish:minor": "npm run minor && npm run publish",
+    "publish:major": "npm run major && npm run publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
