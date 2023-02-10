@@ -1,21 +1,18 @@
 {
-  "name": "@tauruses/taurus",
-  "version": "0.0.1",
-  "description": "A set of web components and utils.",
+  "name": "@tauruses/tau-heading",
+  "version": "0.0.2",
+  "description": "A heading component for taurus.",
   "keywords": [
     "web components",
+    "component",
     "tauruses",
     "taurus",
-    "tau",
-    "component"
+    "tau"
   ],
   "main": "dist/index.js",
   "type": "module",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && mkdir dist",
@@ -28,12 +25,6 @@
   },
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "./packages/*"
-  ],
-  "devDependencies": {
-    "typescript": "^4.9.5"
-  },
   "publishConfig": {
     "access": "public"
   }

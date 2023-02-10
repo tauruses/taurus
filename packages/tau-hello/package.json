@@ -1,21 +1,19 @@
 {
-  "name": "@tauruses/taurus",
+  "name": "@tauruses/tau-hello",
   "version": "0.0.1",
-  "description": "A set of web components and utils.",
+  "description": "A hello component.",
   "keywords": [
     "web components",
+    "compoent",
+    "hello",
     "tauruses",
     "taurus",
-    "tau",
-    "component"
+    "tau"
   ],
   "main": "dist/index.js",
   "type": "module",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && mkdir dist",
@@ -28,12 +26,6 @@
   },
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "./packages/*"
-  ],
-  "devDependencies": {
-    "typescript": "^4.9.5"
-  },
   "publishConfig": {
     "access": "public"
   }

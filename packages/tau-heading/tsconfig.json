@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "incremental": false,
+        "module": "esnext",
+        "target": "es2017",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "strict": true,
+        "declaration": true,
+        "declarationDir": "./dist/",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./dist/",
+    }
+}
