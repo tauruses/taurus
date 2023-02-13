@@ -20,7 +20,8 @@
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && mkdir dist",
     "build": "npm run prebuild && tsc -b",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build",
+    "test": "npm test -ws",
     "prepublishOnly": "npm run build",
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish",
@@ -32,6 +33,14 @@
     "./packages/*"
   ],
   "devDependencies": {
+    "chai": "^4.3.7",
+    "chromium": "^3.0.3",
+    "karma": "^6.4.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "mocha": "^10.2.0",
     "typescript": "^4.9.5"
   },
   "publishConfig": {

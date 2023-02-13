@@ -18,7 +18,7 @@
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && mkdir dist",
     "build": "npm run prebuild && tsc -b",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start karma.conf.cjs",
     "prepublishOnly": "npm run build",
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish",
